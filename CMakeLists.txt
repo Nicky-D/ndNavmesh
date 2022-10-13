@@ -13,8 +13,8 @@ if( MSVC )
   add_definitions( "/Oy-" )
 endif( MSVC )
 
-file (GLOB SOURCE_FILES ndPathinglib.cpp )
-file (GLOB INCLUDE_FILES ndPathinglib.h )
+file (GLOB SOURCE_FILES ndPathinglib.cpp ndPhysicsextensions.cpp)
+file (GLOB INCLUDE_FILES ndPathinglib.h ndPhysicsextensions.h)
 
 add_library(ndNavmesh STATIC ${SOURCE_FILES} ${INCLUDE_FILES} )
 
